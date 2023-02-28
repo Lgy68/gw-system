@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gw-common" />
+        <module name="gw-admin" />
+        <module name="gw-system" />
+        <module name="gw-framework" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gw-data" target="1.5" />
+      <module name="www" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gw" options="" />
+      <module name="gw-admin" options="" />
+      <module name="gw-common" options="" />
+      <module name="gw-framework" options="" />
+      <module name="gw-system" options="" />
+      <module name="www" options="-parameters" />
+    </option>
+  </component>
+</project>
