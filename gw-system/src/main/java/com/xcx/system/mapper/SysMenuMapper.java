@@ -1,5 +1,8 @@
 package com.xcx.system.mapper;
 
+import com.xcx.common.domain.Response;
+import com.xcx.common.domain.entiy.SysMenu;
+
 import java.util.List;
 
 /**
@@ -18,4 +21,16 @@ public interface SysMenuMapper
     public List<String> selectMenuPermsByRoleId(Long roleId);
 
     public List<String> selectMenuPermsByUserId(Long userId);
+
+    int insertMenu(SysMenu menu);
+
+    int updateMenu(SysMenu menu);
+
+    int hasChildByMenuId(Long menuId);
+
+    int removeMenu(Long menuId);
+
+    List<SysMenu> queryMenuList(SysMenu menu);
+
+    SysMenu selectMenuById(Long menuId);
 }

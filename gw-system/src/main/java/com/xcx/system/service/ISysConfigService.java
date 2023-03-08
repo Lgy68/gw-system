@@ -1,6 +1,6 @@
 package com.xcx.system.service;
 
-import com.xcx.system.domain.SysConfig;
+import com.xcx.common.domain.entiy.SysConfig;
 
 import java.util.List;
 
