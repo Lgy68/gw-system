@@ -76,7 +76,7 @@ public class MenuController {
      */
     @GetMapping(value = "/{menuId}")
     @PreAuthorize("@ss.hasPermi('system:menu:query')")
-    public Response getInfo(@PathVariable Long menuId)
+    public Response getInfo(@PathVariable("menuId") Long menuId)
     {
         return Response.success(menuService.selectMenuById(menuId));
     }
