@@ -134,6 +134,12 @@ public class TokenService {
         return null;
     }
 
+    /**
+     * 获取请求token
+     *
+     * @param request
+     * @return token
+     */
     public String getToken(HttpServletRequest request) {
         String token = request.getHeader("Authorization");
         if (StringUtils.isNotEmpty(token) && token.startsWith(Constants.TOKEN_PREFIX)) {
@@ -156,6 +162,9 @@ public class TokenService {
         }
     }
 
+    /**
+     * 删除用户身份信息
+     */
     public void delLoginUser(String token) {
         if (StringUtils.isNotEmpty(token)){
             Claims claims = parseToken(token);
@@ -164,4 +173,14 @@ public class TokenService {
             redisCache.deleteObject("login_tokens" + uuid);
         }
     }
+
+    /**
+     * 设置用户身份信息
+     */
+    public void setLoginUser(LoginUser loginUser){
+        if (StringUtils.isNotNull(loginUser) && StringUtils.isNotEmpty(loginUser.getToken())){
+            refreshToekn(loginUser);
+        }
+    }
+
 }

@@ -1,7 +1,7 @@
 package com.xcx.system.mapper;
 
-import com.xcx.common.domain.Response;
 import com.xcx.common.domain.entiy.SysMenu;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -33,4 +33,8 @@ public interface SysMenuMapper
     List<SysMenu> queryMenuList(SysMenu menu);
 
     SysMenu selectMenuById(Long menuId);
+
+    List<SysMenu> selectMenuListByUserId(SysMenu menu);
+
+    List<Long> selectMenuListByRoleId(@Param("roleId") Long roleId, @Param("menuCheckStrictly") boolean menuCheckStrictly);
 }

@@ -5,9 +5,7 @@ import com.xcx.common.domain.entiy.SysConfig;
 import java.util.List;
 
 /**
- * 参数配置 服务层
- * 
- * @author ruoyi
+ * 参数配置
  */
 public interface ISysConfigService
 {

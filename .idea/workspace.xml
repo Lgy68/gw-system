@@ -4,120 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f98f7be-099b-4162-8005-669986259600" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-admin/src/main/java/com/xcx/GwAdminApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-admin/src/main/java/com/xcx/OfficeToPdfUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-admin/src/main/java/com/xcx/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-admin/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-admin/src/main/resources/i18n/messages_zh_CN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-admin/src/test/java/com/xcx/GwAdminApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/Exception/CaptchaExpireException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/Exception/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/Exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/Exception/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/Exception/UserPasswordNotMatchException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/Exception/base/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/common/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/constant/UserConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/HttpStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysDept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysLogininfor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysOperLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/enums/BusinessStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/enums/BusinessType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/enums/DataSourceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/enums/HttpMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/enums/LimitType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/enums/OperatorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/enums/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/usu/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/AddressUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/Convert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/IpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/LogUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/MessageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/SecurityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/ServletUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/SpringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/Threads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/uuid/IdUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/uuid/UUID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/AuthenticationContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/AuthenticationEntryPointImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/AuthoricationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/CaptchaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/FastJson2JsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/MyWebResponseExceptionTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/PermissionContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/ResourcesConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/ThreadPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/filter/LogoutSuccessHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/manager/AsyncManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/manager/ShutdownManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/manager/factory/AsyncFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/SysLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/SysPasswordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/SysPermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/SysRegisterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/domain/LoginBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/domain/RegisterBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/domain/SysConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysConfigMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysConfigMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysLogininforMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysLogininforMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysMenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysConfigService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysLogininforService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysOperLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysConfigServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysLogininforServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="7f98f7be-099b-4162-8005-669986259600" name="Changes" comment="公文管理系统基本功能模板实现">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-admin/src/main/java/com/xcx/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-admin/src/main/java/com/xcx/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-admin/src/main/java/com/xcx/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-admin/src/main/java/com/xcx/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gw-admin/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gw-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/annotation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/annotation/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysDept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysLogininfor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysOperLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysRoleDept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysRoleMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysUserPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/domain/entiy/SysUserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/ServletUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/ServletUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/SpringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-common/src/main/java/com/xcx/common/utils/SpringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/SysRegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/SysRegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-framework/src/main/java/com/xcx/framework/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysRoleMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysRoleMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysRoleMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/mapper/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysConfigService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysLogininforService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysLogininforService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysOperLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysOperLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/ISysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysConfigServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysConfigServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysLogininforServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysLogininforServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gw-system/src/main/java/com/xcx/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
+  <component name="ChangesViewManager" show_ignored="true">
     <option name="groupingKeys">
+      <option value="directory" />
       <option value="module" />
     </option>
   </component>
@@ -131,7 +64,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -140,7 +80,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\warehouse\apache-maven-3.6.1\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.6.1" />
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\warehouse\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -150,7 +90,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="2LOHCfAJ0CXp6JPGLuPLkxrOXPX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -172,34 +114,37 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4935242" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.xcx.common.domain.entiy" />
+      <recent name="com.xcx.system.service" />
+      <recent name="com.xcx.system.mapper" />
       <recent name="com.xcx.framework.exception" />
       <recent name="com.xcx.framework.config" />
-      <recent name="com.xcx.www.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\warehouse\gw\gw-system\src\main\java\com\xcx\system\mapper" />
-      <recent name="D:\warehouse\gw\gw-admin\src\main\resources" />
-      <recent name="D:\warehouse\gw\gw-framework\src\main\java\com\xcx\framework\config" />
-      <recent name="D:\warehouse\gw\gw-framework\src\main\java\com\xcx\framework" />
-      <recent name="D:\warehouse\gw\gw-framework\src\main\java\com\xcx\www" />
+      <recent name="D:\warehouse\Develop\exercise\gw-system\gw\gw-system\src\main\java\com\xcx\system\mapper" />
+      <recent name="D:\warehouse\Develop\exercise\gw-system\gw\gw-common\src\main\java\com\xcx\common\Exception" />
+      <recent name="D:\warehouse\Develop\exercise\gw-system\gw\gw-common\src\main\java\com\xcx\common\utils" />
+      <recent name="D:\warehouse\Develop\exercise\gw-system\gw\gw-common\src\main\java\com\xcx\common\annotation" />
+      <recent name="D:\warehouse\Develop\exercise\gw-system\gw\gw-system\src\main\java\com\xcx\system\service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\warehouse\Develop\exercise\gw-system\gw\gw-system\src\main\java\com\xcx\system\mapper" />
       <recent name="D:\warehouse\gw\gw-system\src\main\java\com\xcx\system\mapper" />
       <recent name="D:\warehouse\gw\gw-system\src\main\resources\mapper.system" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xcx.common.Exception" />
       <recent name="com.xcx.common.constant" />
-      <recent name="com.xcx.system.mapper" />
-      <recent name="com.xcx.system.service.impl" />
-      <recent name="com.xcx.system.domain" />
+      <recent name="com.xcx.common.domain.entiy" />
+      <recent name="com.xcx.common.utils" />
+      <recent name="com.xcx.common.utils.reflect" />
+      <recent name="com.xcx.common.utils.uuid" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -209,7 +154,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GwAdminApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.Unnamed">
     <configuration name="GwAdminApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gw-admin" />
       <extension name="coverage">
@@ -245,6 +190,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\lxy68\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7f98f7be-099b-4162-8005-669986259600" name="Changes" comment="" />
@@ -258,22 +206,94 @@
       <workItem from="1675951369884" duration="68000" />
       <workItem from="1675951466690" duration="63655000" />
       <workItem from="1676534426382" duration="12482000" />
-      <workItem from="1677480497272" duration="12018000" />
+      <workItem from="1677480497272" duration="17217000" />
+      <workItem from="1677661367937" duration="24431000" />
+      <workItem from="1678435549100" duration="2079000" />
+      <workItem from="1678438036132" duration="1314000" />
+      <workItem from="1678464632632" duration="1375000" />
+      <workItem from="1678469149309" duration="31091000" />
+      <workItem from="1679318235591" duration="4645000" />
+      <workItem from="1679494614623" duration="12394000" />
+      <workItem from="1679969661752" duration="6614000" />
+      <workItem from="1680071301881" duration="8000" />
+      <workItem from="1680098815810" duration="8163000" />
+      <workItem from="1680223873385" duration="19000" />
+      <workItem from="1680444818237" duration="3809000" />
     </task>
+    <task id="LOCAL-00001" summary="公文管理系统初步模板">
+      <created>1677575136778</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677575136778</updated>
+    </task>
+    <task id="LOCAL-00002" summary="公文管理系统初步模板">
+      <created>1677661878753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677661878753</updated>
+    </task>
+    <task id="LOCAL-00003" summary="公文管理系统基本功能模板实现">
+      <created>1678286356938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678286356938</updated>
+    </task>
+    <task id="LOCAL-00004" summary="公文管理系统基本功能模板实现">
+      <created>1678469842226</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678469842226</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="公文管理系统初步模板" />
+    <MESSAGE value="公文管理系统基本功能模板实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="公文管理系统基本功能模板实现" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

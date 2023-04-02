@@ -95,30 +95,4 @@ public class LoginController {
         return Response.success("操作成功", token);
     }
 
-    @GetMapping("/demo/de")
-    public Response demo1(@PathVariable("name") String name) {
-
-        if ("ok".equals(name)) {
-            return Response.success("succ");
-        }
-        if ("err".equals(name)) {
-            //抛业务相关的异常
-            throw new ServiceException("err");
-        }
-        if ("errcode".equals(name)) {
-            throw new ServiceException(200, "errcode");
-        }
-        if ("0".equals(name)) {
-            int i = 1 / 0;
-        }
-
-        return Response.success("default");
-    }
-
-    @GetMapping("/list")
-    public Response list() {
-        List<String> list = Arrays.asList("zhangsan", "lisi", "wangwu");
-
-        return Response.success(list);
-    }
 }

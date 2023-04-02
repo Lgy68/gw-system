@@ -15,11 +15,6 @@ import javax.annotation.PostConstruct;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * 参数配置 服务层实现
- * 
- * @author ruoyi
- */
 @Service
 public class SysConfigServiceImpl implements ISysConfigService
 {

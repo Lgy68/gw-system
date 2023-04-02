@@ -16,4 +16,5 @@ public interface SysRoleMenuMapper
      */
     public int checkMenuExistRole(Long menuId);
 
+    public int deleteRoleMenu(Long[] roleIds);
 }

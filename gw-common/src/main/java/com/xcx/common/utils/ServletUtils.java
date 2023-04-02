@@ -40,4 +40,27 @@ public class ServletUtils {
         }
     }
 
+    /**
+     * 获取String参数
+     */
+    public static String getParameter(String name, String defaultValue)
+    {
+        return Convert.toStr(getRequest().getParameter(name), defaultValue);
+    }
+
+    /**
+     * 获取String参数
+     */
+    public static String getParameter(String name)
+    {
+        return getRequest().getParameter(name);
+    }
+
+    /**
+     * 获取Boolean参数
+     */
+    public static Boolean getParameterToBool(String name)
+    {
+        return Convert.toBool(getRequest().getParameter(name));
+    }
 }

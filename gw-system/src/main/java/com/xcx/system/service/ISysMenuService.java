@@ -1,5 +1,6 @@
 package com.xcx.system.service;
 
+import com.xcx.common.domain.TreeSelect;
 import com.xcx.common.domain.entiy.SysMenu;
 import org.springframework.context.annotation.Primary;
 
@@ -7,13 +8,9 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * 菜单 业务层
- * 
- * @author ruoyi
+ * 菜单管理
  */
-@Primary
-public interface ISysMenuService
-{
+public interface ISysMenuService {
 
     /**
      * 根据角色ID查询权限
@@ -35,7 +32,13 @@ public interface ISysMenuService
 
     int removeMenu(Long menuId);
 
-    List<SysMenu> queryMenuList(SysMenu menu);
+    List<SysMenu> queryMenuList(Long userId);
+
+    List<SysMenu> queryMenuList(SysMenu menu, Long userId);
 
     SysMenu selectMenuById(Long menuId);
+
+    List<TreeSelect> buildMenuTreeSelect(List<SysMenu> menus);
+
+    List<Long> selectMenuListByRoleId(Long roleId);
 }
