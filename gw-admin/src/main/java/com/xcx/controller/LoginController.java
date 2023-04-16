@@ -7,7 +7,6 @@ import com.xcx.common.utils.StringUtils;
 import com.xcx.common.utils.uuid.IdUtils;
 import com.xcx.framework.service.SysRegisterService;
 import com.xcx.system.domain.LoginBody;
-import com.xcx.common.Exception.ServiceException;
 import com.xcx.common.domain.Response;
 import com.xcx.framework.service.SysLoginService;
 import com.xcx.system.domain.RegisterBody;
@@ -23,7 +22,6 @@ import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @RestController
@@ -57,9 +55,9 @@ public class LoginController {
         String key = "captcha_codes:" + uuid;
         //生成验证码
         String capText = captchaProducer.createText();
-        System.out.println(capText);
-        System.out.println(uuid);
-        BufferedImage image = captchaProducer.createImage(capText);
+        String capStr = capText.substring(0, capText.lastIndexOf("@"));
+        String code = capText.substring(capText.lastIndexOf("@") + 1);
+        BufferedImage image = captchaProducer.createImage(capStr);
         //将验证码存放到redis数据库中
         redisCache.setCacheObject(key, capText, Constants.CAPTCHA_EXPIRATION, TimeUnit.HOURS);
         //转换流信息写出

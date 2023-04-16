@@ -2,14 +2,14 @@ package com.xcx.system.mapper;
 
 
 import com.xcx.common.domain.entiy.SysLogininfor;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
- * 系统访问日志情况信息 数据层
- * 
- * @author ruoyi
+ * 系统访问日志情况信息
  */
+@Component
 public interface SysLogininforMapper
 {
     /**

@@ -2,14 +2,14 @@ package com.xcx.system.mapper;
 
 import com.xcx.common.domain.entiy.SysMenu;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * 菜单表 数据层
- *
- * @author ruoyi
  */
+@Component
 public interface SysMenuMapper
 {
     /**

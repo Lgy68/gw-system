@@ -2,12 +2,14 @@ package com.xcx.system.mapper;
 
 import com.xcx.common.domain.entiy.SysDept;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * 部门管理
  */
+@Component
 public interface SysDeptMapper
 {
     /**

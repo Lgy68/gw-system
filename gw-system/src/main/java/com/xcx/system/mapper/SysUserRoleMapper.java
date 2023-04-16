@@ -2,11 +2,12 @@ package com.xcx.system.mapper;
 
 import com.xcx.common.domain.entiy.SysUserRole;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
- * 用户与角色关联表 数据层
+ * 用户与角色关联表
  */
 public interface SysUserRoleMapper
 {

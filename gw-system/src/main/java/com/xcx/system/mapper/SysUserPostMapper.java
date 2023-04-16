@@ -1,11 +1,12 @@
 package com.xcx.system.mapper;
 
 import com.xcx.common.domain.entiy.SysUserPost;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
- * 用户与岗位关联表 数据层
+ * 用户与岗位关联表
  */
 public interface SysUserPostMapper
 {

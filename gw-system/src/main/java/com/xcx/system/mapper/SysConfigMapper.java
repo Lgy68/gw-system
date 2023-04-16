@@ -1,14 +1,14 @@
 package com.xcx.system.mapper;
 
 import com.xcx.common.domain.entiy.SysConfig;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * 参数配置 数据层
- * 
- * @author ruoyi
  */
+@Component
 public interface SysConfigMapper
 {
     /**

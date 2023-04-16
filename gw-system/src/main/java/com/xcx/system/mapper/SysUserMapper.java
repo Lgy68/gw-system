@@ -1,11 +1,12 @@
 package com.xcx.system.mapper;
 
 import com.xcx.common.domain.entiy.SysUser;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
- * 用户表 数据层
+ * 用户表
  */
 public interface SysUserMapper {
 

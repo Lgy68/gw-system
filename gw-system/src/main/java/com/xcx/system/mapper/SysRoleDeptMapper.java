@@ -5,7 +5,7 @@ import com.xcx.common.domain.entiy.SysRoleDept;
 import java.util.List;
 
 /**
- * 角色与部门关联表 数据层
+ * 角色与部门关联表
  */
 public interface SysRoleDeptMapper
 {

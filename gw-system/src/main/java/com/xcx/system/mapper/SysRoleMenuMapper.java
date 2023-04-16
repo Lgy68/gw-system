@@ -1,10 +1,7 @@
 package com.xcx.system.mapper;
 
-
-import java.util.List;
-
 /**
- * 角色与菜单关联表 数据层
+ * 角色与菜单关联表
  */
 public interface SysRoleMenuMapper
 {
