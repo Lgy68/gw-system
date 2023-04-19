@@ -4,6 +4,7 @@ import com.xcx.common.domain.entiy.SysRole;
 import com.xcx.common.domain.entiy.SysUserRole;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * 角色管理
@@ -41,4 +42,6 @@ public interface ISysRoleService {
     int insertAuthUsers(Long roleId, Long[] userIds);
 
     List<SysRole> selectRolesByUserId(Long userId);
+
+    public Set<String> selectRolePermissionByUserId(Long userId);
 }

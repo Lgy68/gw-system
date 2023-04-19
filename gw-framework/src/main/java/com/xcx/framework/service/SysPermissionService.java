@@ -3,6 +3,7 @@ package com.xcx.framework.service;
 import com.xcx.common.domain.entiy.SysRole;
 import com.xcx.common.domain.entiy.SysUser;
 import com.xcx.system.service.ISysMenuService;
+import com.xcx.system.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +19,24 @@ public class SysPermissionService {
 
     @Autowired
     private ISysMenuService menuService;
+
+    @Autowired
+    private ISysRoleService roleService;
+
+    public Set<String> getRolePermission(SysUser user)
+    {
+        Set<String> roles = new HashSet<String>();
+        // 管理员拥有所有权限
+        if (user.isAdmin())
+        {
+            roles.add("admin");
+        }
+        else
+        {
+            roles.addAll(roleService.selectRolePermissionByUserId(user.getUserId()));
+        }
+        return roles;
+    }
 
     public Set<String> getMenuPermission(SysUser user) {
         Set<String> perms = new HashSet<>();

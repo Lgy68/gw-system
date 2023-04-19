@@ -17,8 +17,7 @@ import com.xcx.system.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class ISysRoleServiceImpl implements ISysRoleService {
@@ -181,5 +180,20 @@ public class ISysRoleServiceImpl implements ISysRoleService {
             row = roleDeptMapper.batchRoleDept(list);
         }
         return row;
+    }
+
+    @Override
+    public Set<String> selectRolePermissionByUserId(Long userId)
+    {
+        List<SysRole> perms = roleMapper.selectRolePermissionByUserId(userId);
+        Set<String> permsSet = new HashSet<>();
+        for (SysRole perm : perms)
+        {
+            if (StringUtils.isNotNull(perm))
+            {
+                permsSet.addAll(Arrays.asList(perm.getRoleKey().trim().split(",")));
+            }
+        }
+        return permsSet;
     }
 }
