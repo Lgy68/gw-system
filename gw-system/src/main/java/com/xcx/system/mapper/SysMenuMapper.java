@@ -37,4 +37,8 @@ public interface SysMenuMapper
     List<SysMenu> selectMenuListByUserId(SysMenu menu);
 
     List<Long> selectMenuListByRoleId(@Param("roleId") Long roleId, @Param("menuCheckStrictly") boolean menuCheckStrictly);
+
+    public List<SysMenu> selectMenuTreeAll();
+
+    public List<SysMenu> selectMenuTreeByUserId(Long userId);
 }

@@ -1,8 +1,8 @@
 package com.xcx.system.service;
 
+import com.xcx.common.domain.RouterVo;
 import com.xcx.common.domain.TreeSelect;
 import com.xcx.common.domain.entiy.SysMenu;
-import org.springframework.context.annotation.Primary;
 
 import java.util.List;
 import java.util.Set;
@@ -41,4 +41,8 @@ public interface ISysMenuService {
     List<TreeSelect> buildMenuTreeSelect(List<SysMenu> menus);
 
     List<Long> selectMenuListByRoleId(Long roleId);
+
+    List<SysMenu> selectMenuTreeByUserId(Long userId);
+
+    List<RouterVo> buildMenus(List<SysMenu> menus);
 }

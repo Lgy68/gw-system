@@ -59,4 +59,8 @@ public class SecurityUtils {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         return encoder.encode(password);
     }
+
+    public static boolean isAdmin(Long userId) {
+        return userId != null && 1L == userId;
+    }
 }

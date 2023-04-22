@@ -9,45 +9,46 @@ import java.util.HashMap;
 /**
  * 返回数据
  */
-@Data
-public class Response extends HashMap implements Serializable {
-
+public class Response extends HashMap<String, Object>{
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 状态码
-     */
-    public static String CODE_TAG = "code";
+    /** 状态码 */
+    public static final String CODE_TAG = "code";
+
+    /** 返回内容 */
+    public static final String MSG_TAG = "msg";
+
+    /** 数据对象 */
+    public static final String DATA_TAG = "data";
 
     /**
-     * 返回内容
+     * 初始化一个新创建的 Response 对象，使其表示一个空消息。
      */
-    public static String MSG_TAG = "msg";
-
-    /**
-     * 数据对象
-     */
-    public static String DATA_TAG = "data";
-
-    /**
-     * 初始化一个新创建的 AjaxResult 对象
-     *
-     * @param code 状态码
-     * @param msg  返回内容
-     */
-    public Response(int code, String msg) {
-        super.put(CODE_TAG,code);
-        super.put(MSG_TAG,msg);
+    public Response()
+    {
     }
 
     /**
-     * 初始化一个新创建的 AjaxResult 对象
+     * 初始化一个新创建的 Response 对象
      *
      * @param code 状态码
-     * @param msg  返回内容
+     * @param msg 返回内容
+     */
+    public Response(int code, String msg)
+    {
+        super.put(CODE_TAG, code);
+        super.put(MSG_TAG, msg);
+    }
+
+    /**
+     * 初始化一个新创建的 Response 对象
+     *
+     * @param code 状态码
+     * @param msg 返回内容
      * @param data 数据对象
      */
-    public Response(int code, String msg, Object data) {
+    public Response(int code, String msg, Object data)
+    {
         super.put(CODE_TAG, code);
         super.put(MSG_TAG, msg);
         if (StringUtils.isNotNull(data))
@@ -61,7 +62,8 @@ public class Response extends HashMap implements Serializable {
      *
      * @return 成功消息
      */
-    public static Response success() {
+    public static Response success()
+    {
         return Response.success("操作成功");
     }
 
@@ -70,7 +72,8 @@ public class Response extends HashMap implements Serializable {
      *
      * @return 成功消息
      */
-    public static Response success(Object data) {
+    public static Response success(Object data)
+    {
         return Response.success("操作成功", data);
     }
 
@@ -80,18 +83,20 @@ public class Response extends HashMap implements Serializable {
      * @param msg 返回内容
      * @return 成功消息
      */
-    public static Response success(String msg) {
+    public static Response success(String msg)
+    {
         return Response.success(msg, null);
     }
 
     /**
      * 返回成功消息
      *
-     * @param msg  返回内容
+     * @param msg 返回内容
      * @param data 数据对象
      * @return 成功消息
      */
-    public static Response success(String msg, Object data) {
+    public static Response success(String msg, Object data)
+    {
         return new Response(HttpStatus.SUCCESS, msg, data);
     }
 
@@ -100,7 +105,8 @@ public class Response extends HashMap implements Serializable {
      *
      * @return
      */
-    public static Response error() {
+    public static Response error()
+    {
         return Response.error("操作失败");
     }
 
@@ -110,41 +116,46 @@ public class Response extends HashMap implements Serializable {
      * @param msg 返回内容
      * @return 警告消息
      */
-    public static Response error(String msg) {
+    public static Response error(String msg)
+    {
         return Response.error(msg, null);
     }
 
     /**
      * 返回错误消息
      *
-     * @param code 返回状态码
-     * @param msg  返回内容
-     * @return 警告消息
-     */
-    public static Response error(int code, String msg) {
-        return new Response(code, msg, null);
-    }
-
-    /**
-     * 返回错误消息
-     *
-     * @param msg  返回内容
+     * @param msg 返回内容
      * @param data 数据对象
      * @return 警告消息
      */
-    public static Response error(String msg, Object data) {
+    public static Response error(String msg, Object data)
+    {
         return new Response(HttpStatus.ERROR, msg, data);
     }
 
     /**
      * 返回错误消息
      *
-     * @param msg  返回内容
-     * @param data 数据对象
+     * @param code 状态码
+     * @param msg 返回内容
      * @return 警告消息
      */
-    public static Response error(int code, String msg, Object data) {
-        return new Response(code, msg, data);
+    public static Response error(int code, String msg)
+    {
+        return new Response(code, msg, null);
     }
 
+    /**
+     * 方便链式调用
+     *
+     * @param key 键
+     * @param value 值
+     * @return 数据对象
+     */
+    @Override
+    public Response put(String key, Object value)
+    {
+        super.put(key, value);
+        return this;
+    }
 }
